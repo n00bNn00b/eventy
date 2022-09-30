@@ -1,16 +1,16 @@
 import React from "react";
-import { FaCalendar, FaSearchLocation } from "react-icons/fa";
+import { FaCalendar, FaGreaterThan, FaSearchLocation } from "react-icons/fa";
 
 const Event = () => {
   return (
-    <div className="flex lg:flex-row md:flex-col-reverse sm:flex-col-reverse my-20 md:justify-center md:items-start ">
+    <div className="flex lg:row-auto md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
       <div className="md:mx-auto sm:mx-auto md:ml-48 sm:ml-40 my-20">
         <h1 className="text-4xl font-bold">Birthday Bash</h1>
         <p className="text-[#828282]">
           Hosted by <span className="font-bold"> Elysia</span>
         </p>
         {/*  event date*/}
-        <div className="flex mt-10">
+        <div className="flex flex-row mt-10">
           <div className="bg-white p-2 border h-1/2 rounded">
             <FaCalendar className="text-secondary text-2xl " />
           </div>
@@ -27,18 +27,28 @@ const Event = () => {
               <span className="text-2xl">UTC+10</span>
             </p>{" "}
           </div>
-        </div>
-        <div className="flex mt-10">
-          <div className="bg-white h-1/2 p-2 border rounded">
-            <FaSearchLocation className="text-secondary text-2xl " />
+          <div className="mt-5 ml-10 text-2xl text-[#4F4F4F]">
+            <FaGreaterThan />
           </div>
+        </div>
+        {/* location */}
+        <div className="flex flex-row ">
+          <div className="flex mt-10">
+            <div className="bg-white p-2 border h-1/2 rounded">
+              <FaSearchLocation className="text-secondary text-2xl " />
+            </div>
 
-          <div className="ml-5">
-            <h2 className="text-[#240D57] font-bold text-2xl">Street name</h2>
-            <p className="text-[#4F4F4F] text-2xl">Suburb, State, Postcode</p>
+            <div className="ml-5">
+              <h2 className="text-[#240D57] font-bold text-2xl">Street name</h2>
+              <p className="text-[#4F4F4F] text-2xl">Suburb, State, Postcode</p>
+            </div>
+          </div>
+          <div className="mt-14 ml-28 text-2xl text-[#4F4F4F]">
+            <FaGreaterThan />
           </div>
         </div>
       </div>
+
       <div className="my-20 md:mx-auto sm:mx-auto md:ml-48 sm:ml-40">
         <img
           className="w-96 border-r-4"
