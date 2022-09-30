@@ -3,7 +3,7 @@ import { FaCalendar, FaGreaterThan, FaSearchLocation } from "react-icons/fa";
 
 const Event = () => {
   return (
-    <div className="flex lg:row-auto md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
+    <div className="flex lg:flex-row md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse">
       <div className="md:mx-auto sm:mx-auto md:ml-48 sm:ml-40 my-20">
         <h1 className="text-4xl font-bold">Birthday Bash</h1>
         <p className="text-[#828282]">

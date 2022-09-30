@@ -32,7 +32,9 @@ const Create = () => {
           />
         </div>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary mx-auto my-5">Create Event</button>
+          <button className="btn  bg-gradient-to-r from-secondary to-accent mx-auto my-5">
+            Create Event
+          </button>
         </div>
       </div>
     </div>
