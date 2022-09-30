@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -16,10 +17,13 @@ const Home = () => {
             social media.
           </p>
           <div className="lg:block my-10 md:hidden sm:hidden ">
-            <button className="btn w-48 bg-gradient-to-r from-secondary to-accent border-none mb-20">
+            <Link
+              to="/create"
+              className="btn w-48 bg-gradient-to-r from-secondary to-accent border-none mb-20"
+            >
               {" "}
               🎉 Create my event
-            </button>
+            </Link>
           </div>
         </div>
         <div className="mx-auto lg:ml-48 my-20">
@@ -29,10 +33,13 @@ const Home = () => {
           />
         </div>
         <div className="lg:hidden md:mx-auto sm:mx-auto ">
-          <button className="btn w-48 bg-gradient-to-r from-secondary to-accent border-none mb-20">
+          <Link
+            to="/create"
+            className="btn w-48 bg-gradient-to-r from-secondary to-accent border-none mb-20"
+          >
             {" "}
             🎉 Create my event
-          </button>
+          </Link>
         </div>
       </div>
     </div>
